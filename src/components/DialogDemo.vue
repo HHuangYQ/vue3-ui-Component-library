@@ -1,7 +1,6 @@
 <template>
     <div>
-        switch文档
-        <p>switch文档</p>
+        diglog文档
     </div>
 </template>
 

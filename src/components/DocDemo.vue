@@ -1,10 +1,6 @@
 <template>
-    <div>
-        switch文档
-        <p>switch文档</p>
-    </div>
+<div>DOc默认页面</div>
 </template>
-
 
 <script lang="ts">
 export default{
