@@ -5,7 +5,7 @@
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
-    <Menu class="nice" @click="toggleMenu"/>
+    <Menu class="toggleAside" @click="toggleMenu"/>
   </div>
 
   
@@ -55,7 +55,7 @@ export default {
     }
   }
   
- > .nice{
+ > .toggleAside{
       position: absolute;
       top: 15px;
       left: 15px;
@@ -65,8 +65,7 @@ export default {
       display: none;
       transform: translateY(-10%);
     }
- 
-
+  
   @media(max-width:500px) {
     >.menu {
       display: none;
@@ -76,7 +75,7 @@ export default {
       margin: 0 auto;
     }
 
-    >.nice {
+    >.toggleAside {
       display: inline-block;
 
     }
