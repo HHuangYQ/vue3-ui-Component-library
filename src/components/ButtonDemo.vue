@@ -49,6 +49,7 @@
     <div>
         <h1>示例5</h1>
         <Buttons loading>加载中</Buttons>
+         <Buttons>加载完毕</Buttons>
     </div>
 </template>
 
