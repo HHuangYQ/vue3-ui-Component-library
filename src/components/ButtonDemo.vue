@@ -38,7 +38,14 @@
      <div>
          <Buttons level="main" theme="text">主要文字按钮</Buttons>
         <Buttons theme="text">普通文字按钮</Buttons>
-        <Buttons level="danger" theme="text">危险文字    按钮</Buttons>
+        <Buttons level="danger" theme="text">危险文字按钮</Buttons>
+    </div>
+    <h1>示例4</h1>
+    <div>
+        <Buttons disabled>禁用按钮</Buttons>
+        <Buttons theme="link" disabled>禁用链接按钮</Buttons>
+        <Buttons theme="text" disabled>禁用按钮</Buttons>
+
     </div>
 
 </template>
