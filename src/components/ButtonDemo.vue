@@ -24,6 +24,22 @@
         <Buttons theme="text">普普通</Buttons>
         <Buttons size="small" theme="text">小小小</Buttons>
     </div>
+    <h1>示例3</h1>
+    <div>
+         <Buttons level="main">主要按钮</Buttons>
+        <Buttons>普通按钮</Buttons>
+        <Buttons level="danger">危险按钮</Buttons>
+    </div>
+     <div>
+         <Buttons level="main" theme="link">主要链接按钮</Buttons>
+        <Buttons theme="link">普通链接按钮</Buttons>
+        <Buttons level="danger" theme="link">危险链接按钮</Buttons>
+    </div>
+     <div>
+         <Buttons level="main" theme="text">主要文字按钮</Buttons>
+        <Buttons theme="text">普通文字按钮</Buttons>
+        <Buttons level="danger" theme="text">危险文字    按钮</Buttons>
+    </div>
 
 </template>
 
