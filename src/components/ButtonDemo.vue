@@ -8,6 +8,22 @@
         <Buttons theme="text">你好</Buttons>
 
     </div>
+     <h1>示例2</h1>
+    <div>
+         <Buttons size="big">大大大</Buttons>
+        <Buttons>普普通</Buttons>
+        <Buttons size="small">小小小</Buttons>
+    </div>
+     <div>
+         <Buttons size="big" theme="link">大大大</Buttons>
+        <Buttons theme="link">普普通</Buttons>
+        <Buttons size="small" theme="link">小小小</Buttons>
+    </div>
+     <div>
+         <Buttons size="big" theme="text">大大大</Buttons>
+        <Buttons theme="text">普普通</Buttons>
+        <Buttons size="small" theme="text">小小小</Buttons>
+    </div>
 
 </template>
 
