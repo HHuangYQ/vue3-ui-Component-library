@@ -1,12 +1,18 @@
 <template>
-    <div>
-       tab文档
-    </div>
+    <div>Tabs示例</div>
+    <h1>示例一</h1>
+    <Tabs>
+        <Tab title="导航1">内容一</Tab>
+        <Tab title="导航2">内容二</Tab>
+    </Tabs>
 </template>
 
 
 <script lang="ts">
-export default{
+import Tabs from "../lib/Tabs.vue"
+import Tab from "../lib/Tab.vue"
 
+export default {
+    components: { Tab, Tabs }
 }
 </script>

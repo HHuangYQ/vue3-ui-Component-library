@@ -62,6 +62,7 @@ export default {
             console.log('hi')
         }
         return { onClick }
+        
     }
 }
 </script>
