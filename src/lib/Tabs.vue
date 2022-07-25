@@ -1,16 +1,19 @@
 <template>
-<div class="gulu-tabs">
-  <div class="gulu-tabs-nav" ref="container">
-    <div class="gulu-tabs-nav-item" v-for="(t,index) in titles" :ref="el => { if (t===selected) selectedItem = el }" @click="select(t)" :class="{selected: t=== selected}" :key="index">{{t}}</div>
-    <div class="gulu-tabs-nav-indicator" ref="indicator"></div>
-  </div>
-  <div class="gulu-tabs-content">
-    <component class="gulu-tabs-content-item" :class="{selected: c.props.title === selected }" v-for="c in defaults" :is="c" />
-  </div>
-</div>
+    <div class="gulu-tabs">
+        <div class="gulu-tabs-nav" ref="container">
+            <div class="gulu-tabs-nav-item" v-for="(t, index) in titles"
+                :ref="el => { if (t === selected) selectedItem = el }" @click="select(t)"
+                :class="{ selected: t === selected }" :key="index">{{ t }}</div>
+            <div class="gulu-tabs-nav-indicator" ref="indicator"></div>
+        </div>
+        <div class="gulu-tabs-content">
+            <component class="gulu-tabs-content-item" :class="{ selected: c.props.title === selected }"
+                v-for="c in defaults" :is="c" />
+        </div>
+    </div>
 </template>
 <script lang="ts">
-import { computed, ref, watchEffect } from 'vue'
+import { computed, onMounted, ref, watchEffect } from 'vue'
 import Tab from './Tab.vue'
 export default {
     props: {
@@ -20,24 +23,27 @@ export default {
     },
     setup(props, context) {
         //@ts-ignore
-        const selectedItem = ref < HTMLDivElement > (null)
-         //@ts-ignore
-    const indicator = ref < HTMLDivElement > (null)
-     //@ts-ignore
-    const container = ref < HTMLDivElement > (null)
-         watchEffect(() => {
-      const {
-        width
-      } = selectedItem.value.getBoundingClientRect()
-      indicator.value.style.width = width + 'px'
-      const {
-        left: left1
-      } = container.value.getBoundingClientRect()
-      const {
-        left: left2
-      } = selectedItem.value.getBoundingClientRect()
-      const left = left2 - left1
-      indicator.value.style.left = left + 'px'
+        const selectedItem = ref<HTMLDivElement>(null)
+        //@ts-ignore
+        const indicator = ref<HTMLDivElement>(null)
+        //@ts-ignore
+        const container = ref<HTMLDivElement>(null)
+        onMounted(() => {
+            watchEffect(() => {
+                const {
+                    width
+                } = selectedItem.value.getBoundingClientRect()
+                indicator.value.style.width = width + 'px'
+                const {
+                    left: left1
+                } = container.value.getBoundingClientRect()
+                const {
+                    left: left2
+                } = selectedItem.value.getBoundingClientRect()
+                const left = left2 - left1
+                indicator.value.style.left = left + 'px'
+            })
+
         })
 
 
@@ -53,7 +59,7 @@ export default {
         const select = (title: string) => {
             context.emit('update:selected', title)
         }
-        return { defaults, titles, select,selectedItem, indicator, container }
+        return { defaults, titles, select, selectedItem, indicator, container }
     }
 }
 
