@@ -1,6 +1,8 @@
 <template>
   <div class="topnav">
-    <div class="logo">LOGO</div>
+    <div class="logo">
+      <Grape class="putao"/>
+    </div>
     <ul class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
@@ -27,8 +29,10 @@ export default {
 </script>
  
 <style lang="scss" scoped>
+$color:#01928c;
 
 .topnav {
+  color: $color;
   display: flex;
   padding: 16px;
   position: fixed;
@@ -42,6 +46,10 @@ export default {
   >.logo {
     max-width: 6em;
     margin-right: auto;
+    >.putao{
+    width: 32px;
+    height: 32px;
+    }
   }
 
   >.menu {
