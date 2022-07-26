@@ -6,6 +6,7 @@ import App from './App.vue'
 import './lib/svg.js'
 import './index.scss'
 import 'github-markdown-css'
+import Markdown from './components/Markdown.vue'
 
 const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
@@ -13,3 +14,4 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   }
 app.use(router)
 app.mount('#app')
+app.component("Markdown",Markdown)
