@@ -108,6 +108,7 @@ aside {
                 padding: 4px 16px;
                 display: block;
                 text-decoration: none;
+                 transition: all .3s;
             }
 
             //高亮选择路由
