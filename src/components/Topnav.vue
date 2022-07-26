@@ -1,7 +1,7 @@
 <template>
   <div class="topnav">
     <div class="logo">
-      <Grape class="putao"/>
+      <Grape class="grapes"/>
     </div>
     <ul class="menu">
       <li>菜单1</li>
@@ -46,7 +46,7 @@ $color:#01928c;
   >.logo {
     max-width: 6em;
     margin-right: auto;
-    >.putao{
+    >.grapes{
     width: 32px;
     height: 32px;
     }
@@ -64,7 +64,7 @@ $color:#01928c;
   
  > .toggleAside{
       position: absolute;
-      top: 15px;
+      top: 25px;
       left: 15px;
       width: 25px; 
       height: 25px;
