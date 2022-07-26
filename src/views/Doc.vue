@@ -53,6 +53,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+//高亮选择路由
+.router-link-active{
+    text-decoration: underline;
+}
 .layout {
   display: flex;
   flex-direction: column;
