@@ -4,10 +4,12 @@
       <Grape class="grapes"/>
     </div>
     <ul class="menu">
-      <li>菜单1</li>
-      <li>菜单2</li>
+      <li>
+      <router-link to="/doc">文档</router-link>
+    </li>
     </ul>
-    <Menu class="toggleAside" @click="toggleMenu"/>
+    <Menu  v-if="toggleMenuButtonVisible" class="toggleAside" @click="toggleMenu"/>      
+   
   </div>
 
   
@@ -17,6 +19,12 @@ import { inject, Ref } from 'vue'
 
 
 export default {
+  props:{
+    toggleMenuButtonVisible:{
+      type:Boolean,
+      default:false
+    }
+  },
   setup() {
     const menuVisible = inject<Ref<boolean>>
       ('menuVisible')
@@ -59,10 +67,10 @@ $color:#01928c;
 
     >li {
       margin: 0 1em;
+      
     }
   }
-  
- > .toggleAside{
+  .toggleAside{
       position: absolute;
       top: 25px;
       left: 15px;
@@ -70,9 +78,9 @@ $color:#01928c;
       height: 25px;
       margin-right: 8px;
       display: none;
-      transform: translateY(-10%);
-    }
-  
+      transform: translateY(-10%);  
+ }
+
   @media(max-width:500px) {
     >.menu {
       display: none;
