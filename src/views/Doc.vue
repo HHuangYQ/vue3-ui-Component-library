@@ -69,6 +69,7 @@ export default {
 
         @media (max-width: 500px) {
             padding-left: 0;
+
         }
     }
 }
@@ -78,6 +79,7 @@ export default {
 
     >aside {
         flex-shrink: 0;
+        
     }
 
     >main {
@@ -96,6 +98,7 @@ aside {
     left: 0;
     padding-top: 70px;
     height: 100%;
+    
 
     >h2 {
         margin-bottom: 4px;

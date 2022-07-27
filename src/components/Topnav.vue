@@ -78,7 +78,7 @@ $color:#01928c;
       height: 25px;
       margin-right: 8px;
       display: none;
-      transform: translateY(-10%);  
+      transform: translateY(-10%); 
  }
 
   @media(max-width:500px) {
