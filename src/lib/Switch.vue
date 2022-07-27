@@ -1,9 +1,10 @@
 <template>
-    <button class="gulu-switch" @click="toggle" :class="{ 'gulu-checked': value }">
-        <span></span> </button>
+    <Buttons class="gulu-switch" @click="toggle" :class="{ 'gulu-checked': value }">
+        <span></span> </Buttons>
 </template>
 
 <script lang="ts">
+import Buttons from "./Buttons.vue"
 // import { ref } from 'vue'
 export default {
     props: {
@@ -11,10 +12,11 @@ export default {
     },
     setup(props, context) {
         const toggle = () => {
-            context.emit('update:value', !props.value)
-        }
-        return { toggle }
-    }
+            context.emit("update:value", !props.value);
+        };
+        return { toggle };
+    },
+    components: { Buttons }
 }
 </script>
 <style lang="scss">
