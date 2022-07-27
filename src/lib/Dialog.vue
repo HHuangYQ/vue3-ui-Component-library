@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import Button from './Buttons.vue'
+import Button from './Button.vue'
 export default {
     props: {
         visible: {

@@ -3,7 +3,7 @@ import { router } from './router';
 import { createApp } from 'vue'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import App from './App.vue'
-import './lib/svg.js'
+import './assets/svg.js'
 import './index.scss'
 import 'github-markdown-css'
 import Markdown from './components/Markdown.vue'

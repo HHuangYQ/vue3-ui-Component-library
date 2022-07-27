@@ -4,28 +4,28 @@
 <template>
 <div>
   <div>
-    <Buttons size="big">大大大</Buttons>
-    <Buttons>普普通</Buttons>
-    <Buttons size="small">小小小</Buttons>
+    <Button size="big">大大大</Button>
+    <Button>普普通</Button>
+    <Button size="small">小小小</Button>
   </div>
   <div>
-    <Buttons theme="link" size="big">大大大</Buttons>
-    <Buttons theme="link">普普通</Buttons>
-    <Buttons size="small" theme="link">小小小</Buttons>
+    <Button theme="link" size="big">大大大</Button>
+    <Button theme="link">普普通</Button>
+    <Button size="small" theme="link">小小小</Button>
   </div>
   <div>
-    <Buttons size="big" theme="text">大大大</Buttons>
-    <Buttons theme="text">普普通</Buttons>
-    <Buttons size="small" theme="text">小小小</Buttons>
+    <Button size="big" theme="text">大大大</Button>
+    <Button theme="text">普普通</Button>
+    <Button size="small" theme="text">小小小</Button>
   </div>
 </div>
 </template>
 
 <script lang="ts">
-import Buttons from "../lib/Buttons.vue";
+import Button from "../lib/Button.vue";
 export default {
   components: {
-    Buttons
+    Button
   }
 }
 </script>

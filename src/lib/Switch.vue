@@ -1,10 +1,10 @@
 <template>
-    <Buttons class="gulu-switch" @click="toggle" :class="{ 'gulu-checked': value }">
-        <span></span> </Buttons>
+    <button class="gulu-switch" @click="toggle" :class="{ 'gulu-checked': value }">
+        <span></span> </button>
 </template>
 
 <script lang="ts">
-import Buttons from "./Buttons.vue"
+import Button from "./Button.vue"
 // import { ref } from 'vue'
 export default {
     props: {
@@ -16,7 +16,7 @@ export default {
         };
         return { toggle };
     },
-    components: { Buttons }
+    components: { Button }
 }
 </script>
 <style lang="scss">

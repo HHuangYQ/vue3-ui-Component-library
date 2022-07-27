@@ -3,12 +3,13 @@
 </demo>
 <template>
 <div>
-  <Buttons @click="showDialog">打开对话框</Buttons>
+  <Button @click="showDialog">打开对话框</Button>
 </div>
 </template>
 
+
 <script lang="ts">
-import Buttons from '../lib/Buttons.vue'
+import Button from '../lib/Button.vue'
 import {
   ref,
   h
@@ -18,7 +19,7 @@ import {
 } from '../lib/openDialog'
 export default {
   components: {
-    Buttons
+    Button
   },
   setup() {
     const showDialog = () => {

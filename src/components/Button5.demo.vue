@@ -3,16 +3,16 @@
 </demo>
 <template>
 <div>
-  <Buttons loading>加载中</Buttons>
-  <Buttons>加载完毕</Buttons>
+  <Button loading>加载中</Button>
+  <Button>加载完毕</Button>
 </div>
 </template>
 
 <script lang="ts">
-import Buttons from "../lib/Buttons.vue";
+import Button from "../lib/Button.vue";
 export default {
   components: {
-    Buttons
+    Button
   }
 }
 </script>

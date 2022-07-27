@@ -3,17 +3,17 @@
 </demo>
 <template>
 <div>
-  <Buttons>你好</Buttons>
-  <Buttons theme="link">你好</Buttons>
-  <Buttons theme="text">你好</Buttons>
+  <Button>你好</Button>
+  <Button theme="link">你好</Button>
+  <Button theme="text">你好</Button>
 </div>
 </template>
 
 <script lang="ts">
-import Buttons from "../lib/Buttons.vue";
+import Button from "../lib/Button.vue";
 export default {
   components: {
-    Buttons
+    Button
   }
 }
 </script>
