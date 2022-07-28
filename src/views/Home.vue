@@ -8,7 +8,12 @@
         <p class="actions">
           <a href="">Github</a>
           <a href="">Gitte</a>
-          <router-link to="/doc">开始</router-link>
+          <router-link to="/doc">开始
+            <!--开始按钮上的Icon-->
+            <!-- <svg class="icon">
+      <use xlink:href="#icon-putao"></use>
+    </svg> -->
+          </router-link>
         </p>
       </div>
     </div>
