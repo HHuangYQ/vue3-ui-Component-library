@@ -7,7 +7,7 @@
             <div class="gulu-tabs-nav-indicator" ref="indicator"></div>
         </div>
         <div class="gulu-tabs-content">
-            <component :is="current" :key="current.props.title"/>
+            <component :is="current" :key="current.props.title" />
         </div>
     </div>
 </template>
@@ -47,20 +47,21 @@ export default {
 
         const defaults = context.slots.default()
         defaults.forEach((tag) => {
-            if (tag.type !== Tab) {
+            //@ts-ignore
+            if (tag.type.name !== Tab.name) {
                 throw new Error('Tabs 子标签必须是 Tab')
             }
         })
-    const current = computed(()=>{
-        return defaults.find(tag => tag.props.title === props.selected)
-    })
+        const current = computed(() => {
+            return defaults.find(tag => tag.props.title === props.selected)
+        })
         const titles = defaults.map((tag) => {
             return tag.props.title
         })
         const select = (title: string) => {
             context.emit('update:selected', title)
         }
-        return { current,defaults, titles, select, selectedItem, indicator, container }
+        return { current, defaults, titles, select, selectedItem, indicator, container }
     }
 }
 

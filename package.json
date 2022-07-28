@@ -6,7 +6,6 @@
     "build": "vite build"
   },
   "dependencies": {
-   
     "github-markdown-css": "^5.1.0",
     "prismjs": "^1.28.0",
     "vue": "^3.0.0-rc.1",
