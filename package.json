@@ -1,5 +1,5 @@
 {
-  "name": "grape-ui",
+  "name": "grape-ui-1",
   "version": "0.0.1",
   "files": ["dist/lib/*"],
   "main": "dist/lib/grape.js",
