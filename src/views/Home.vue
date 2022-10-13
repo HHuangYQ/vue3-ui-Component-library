@@ -6,8 +6,8 @@
         <h1>Grape UI</h1>
         <h2>一个耗时且用心的UI框架</h2>
         <p class="actions">
-          <a href="">Github</a>
-          <a href="">Gitte</a>
+          <a href="https://github.com/HHuangYQ/vue3-ui-Component-library">Github</a>
+          <a href="https://gitee.com/jackwh1t3Zz/vue3-ui-Component-library">Gitte</a>
           <router-link to="/doc">开始
             <!--开始按钮上的Icon-->
             <!-- <svg class="icon">
